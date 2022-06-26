@@ -1,33 +1,17 @@
 import * as React from "react";
-import Radio from "@mui/material/Radio";
-import RadioGroup from "@mui/material/RadioGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
-export default function RadioButtonsGroup() {
+export default function BasicButtons() {
   return (
-    <FormControl>
-      <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-      <RadioGroup
-        aria-labelledby="demo-radio-buttons-group-label"
-        defaultValue="female"
-        name="radio-buttons-group"
-      >
-        <FormControlLabel value="female" control={<Radio />} label="Female" />
-        <FormControlLabel value="male" control={<Radio />} label="Male" />
-        <FormControlLabel value="other" control={<Radio />} label="Other" />
-        <FormControlLabel
-          value="viewer"
-          control={<Radio />}
-          label={
-            <div>
-              <strong>Viewer</strong><div>
-              Cannot do anything except view data</div>
-            </div>
-          }
-        />
-      </RadioGroup>
-    </FormControl>
+    <body>
+      <div class="thebox">
+        <div>hello box</div>
+      <Stack direction="row">
+        <Button variant="contained">Contained</Button>
+      </Stack>
+      </div>
+      
+    </body>
   );
 }
