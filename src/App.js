@@ -8,7 +8,7 @@ export default function BasicButtons() {
       <div class="thebox">
         <div>hello box</div>
       <Stack direction="row">
-        <Button variant="contained">Contained</Button>
+        <Button variant="contained">Convert</Button>
       </Stack>
       </div>
       
