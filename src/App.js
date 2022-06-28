@@ -6,7 +6,13 @@ import "./App.css";
 
 function convert() {
    
-  console.log("hello");
+  const feet = document.getElementById('input').value;
+
+  let meters = document.getElementById('Meters').innerHTML;
+  meters = feet*0.3048 ;
+  document.getElementById('Meters').innerHTML = feet*0.3048 + " Meters" ;
+
+  console.log(meters + " meters");
 }
           
 
@@ -23,7 +29,7 @@ export default function BasicButtons() {
         </span>
       </div>
       <div>
-        Equivalent Meters = <Button id="Meters"> 0 Meters</Button>
+        Equivalent Meters = <Button><span  id="Meters">0 Meters</span></Button>
       </div>
       <div class="stack">
       
