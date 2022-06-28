@@ -27,7 +27,7 @@ export default function BasicButtons() {
       </div>
       <div class="stack">
       
-        <button  onClick = {convert} > Convert </button>
+        <Button variant = "contained"  onClick = {convert} > Convert </Button>
       
       </div>
       
