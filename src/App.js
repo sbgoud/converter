@@ -1,23 +1,20 @@
 import * as React from "react";
+import { useState } from "react";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import "./App.css";
 
 
-function convert() {
-   
-  const feet = document.getElementById('input').value;
-
-  let meters = document.getElementById('Meters').innerHTML;
-  meters = feet*0.3048 ;
-  document.getElementById('Meters').innerHTML = feet*0.3048 + " Meters" ;
-
-  console.log(meters + " meters");
-}
-          
+    
 
 
 export default function BasicButtons() {
+
+  let feet = document.getElementById('input').value ;
+  const [meters, setMeters] = useState(feet) ;
+  console.log(meters);
+
+
   return (
     <div class="thebox">
     
@@ -29,11 +26,11 @@ export default function BasicButtons() {
         </span>
       </div>
       <div>
-        Equivalent Meters = <Button><span  id="Meters">0 Meters</span></Button>
+        Equivalent Meters = <Button><span  id="Meters"> {meters} Meters</span></Button>
       </div>
       <div class="stack">
       
-        <Button variant = "contained"  onClick = {convert} > Convert </Button>
+        <Button variant = "contained"  onClick = {() => setMeters(meters * 0.3048)} > Convert </Button>
       
       </div>
       
