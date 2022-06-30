@@ -16,19 +16,19 @@ export default function BasicButtons() {
 
 
   return (
-    <div class="thebox">
+    <div className="thebox">
     
-      <div class="heading"><strong>Feets to meters Converter</strong></div>
+      <div className="heading"><strong>Feets to meters Converter</strong></div>
       <div>
         Enter Feets =
          <span>
-          <input type="text" id="input"/>
+          <input type="number" id="input"/>
         </span>
       </div>
       <div>
         Equivalent Meters = <Button><span  id="Meters"> {meters} Meters</span></Button>
       </div>
-      <div class="stack">
+      <div className="stack">
       
         <Button variant = "contained"  onClick = {() => setMeters(document.getElementById('input').value * 0.3048)} > Convert </Button>
       
