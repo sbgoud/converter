@@ -10,9 +10,9 @@ import "./App.css";
 
 export default function BasicButtons() {
 
-  let feet = document.getElementById('input').value ;
-  const [meters, setMeters] = useState(feet) ;
-  console.log(meters);
+  
+  const [meters, setMeters] = useState(0) ;
+  console.log(meters+" meters");
 
 
   return (
@@ -30,7 +30,7 @@ export default function BasicButtons() {
       </div>
       <div class="stack">
       
-        <Button variant = "contained"  onClick = {() => setMeters(meters * 0.3048)} > Convert </Button>
+        <Button variant = "contained"  onClick = {() => setMeters(document.getElementById('input').value * 0.3048)} > Convert </Button>
       
       </div>
       
