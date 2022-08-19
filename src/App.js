@@ -17,7 +17,7 @@ export default function BasicButtons() {
 
   return (
     <div className="thebox">
-    <h1>Converter</h1>
+    <h2>Converter</h2>
       <div className="heading"><strong>Feets to meters Converter</strong></div>
       <div>
         Enter Feets =
